@@ -1,0 +1,3086 @@
+body {
+    /* Choose one format: */
+    background-color: #b38f00;
+    /* Color Name */
+
+}
+
+.title-header {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.chip {
+    font-size: 12px;
+}
+
+.card {
+    /* border-radius: 15px; */
+}
+
+.card-image img {
+    /* border-radius: 15px !important; */
+}
+
+.select-wrapper input.select-dropdown {
+    text-align: left !important;
+}
+
+.brand-logo img {
+    height: 45px;
+    width: 165px;
+    margin: 10px 5px 5px 5px;
+}
+
+.bg-sidenav {
+    width: 300px;
+    height: 250px;
+    margin: 0px !important;
+}
+
+.bg-sidenav img {
+    width: 300px;
+    height: 250px;
+}
+
+/* 
+Buat Slider 360 x 630 
+Ref Danen
+*/
+
+
+.bg-slider {
+    width: 100%;
+    height: 400px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 50px;
+}
+
+.bg-slider .slides,
+.bg-slider .slides li {
+    height: 675px !important;
+}
+
+.bg-slider .slides li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .bg-slider {
+        width: 100%;
+        height: auto !important;
+
+        margin-bottom: 75px;
+    }
+
+    .bg-slider .slides,
+    .bg-slider .slides li {
+        height: auto !important;
+    }
+
+    .bg-slider .slides li picture {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .bg-slider .slides li img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
+
+.bg-slider+* {
+    clear: both;
+}
+
+/* .bg-slider .indicators {
+    display: block !important;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.bg-slider .indicators .indicator-item {
+    display: inline-block !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.bg-slider .indicators .indicator-item.active {
+    background-color: #fff;
+} */
+
+/* .bg-slider .slider-fixed-item {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+} */
+
+.titles {
+    margin: 0px;
+}
+
+.destinasi {
+    margin: 0px;
+}
+
+.btn-cars {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 36px;
+    line-height: normal !important;
+}
+
+.btn-cars i.material-icons {
+    font-size: 18px;
+    line-height: 1 !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.btn-cars span {
+    line-height: 1;
+}
+
+.img-cars {
+    width: 500px;
+    height: 250px;
+}
+
+.carousel-img {
+    height: 260px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.carousel-img .carousel-item {
+    width: auto;
+    height: auto;
+}
+
+.carousel-img .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.car-filter-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.car-filter-title {
+    margin: 0;
+}
+
+.car-filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.car-filter a {
+    padding: 10px 15px;
+    color: #555;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.car-filter a:hover {
+    color: #2196F3;
+}
+
+.car-filter a.active {
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+    font-weight: 600;
+}
+
+.car-item {
+    opacity: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.car-item.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.car-item.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.card .card-image .img-cars {
+    width: 100%;
+    height: 275px;
+    object-position: center;
+    display: block;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .responsive-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .responsive-section .gambar {
+        order: 1;
+    }
+
+    .responsive-section .paragraf {
+        order: 2;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .bg-slider {
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .car-filter-wrapper {
+        display: block;
+    }
+
+    .car-filter-title {
+        margin-bottom: 15px;
+    }
+
+    .car-filter {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 5px;
+    }
+
+    .car-filter a {
+        flex-shrink: 0;
+    }
+
+    .card .card-image .img-cars {
+        width: 100%;
+        height: auto;
+        object-position: center;
+        display: block;
+    }
+
+
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .bg-slider {
+        height: 350px !important;
+    }
+
+    .card .card-image .img-cars {
+        width: 100%;
+        height: auto;
+        object-position: center;
+        display: block;
+    }
+}
+
+
+/* .sidenav {
+    background-color: #111111;
+}
+
+.sidenav li > a {
+    color: #ffffff;
+}
+
+.sidenav li > a i.material-icons {
+    color: #F5C542;
+}
+
+.sidenav .divider {
+    background-color: #292929;
+} */
+
+
+.tour-pricing-section {
+    padding: 90px 0;
+    background: #f7f7f7;
+}
+
+
+.tour-pricing-section .container {
+    width: 94%;
+    max-width: 1450px;
+}
+
+
+.tour-pricing-subtitle {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #b28a2e;
+}
+
+
+.tour-pricing-title {
+    margin: 0 0 15px;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    color: #171717;
+}
+
+
+.tour-pricing-description {
+    max-width: 650px;
+
+    margin: 0 auto 55px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #777;
+}
+
+.tour-pricing-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+
+.tour-pricing-row>.col {
+    display: flex;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    margin-bottom: 25px;
+}
+
+.tour-card {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid #e8e8e8;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.tour-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.13);
+}
+
+.tour-card-featured {
+    border: 2px solid #b28a2e;
+
+    transform: translateY(-10px);
+}
+
+
+.tour-card-featured:hover {
+    transform: translateY(-18px);
+}
+
+
+.tour-card-image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 0;
+
+    flex-shrink: 0;
+}
+
+
+.tour-card-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.tour-card-badge {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    padding: 7px 14px;
+
+    background: #b28a2e;
+
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    line-height: normal;
+}
+
+
+.tour-card-content {
+    width: 100%;
+
+    padding: 30px 32px 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    box-sizing: border-box;
+}
+
+
+.tour-category {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #b28a2e;
+}
+
+
+.tour-card-content h3 {
+    margin: 0 0 10px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #171717;
+}
+
+
+.tour-desc {
+    min-height: 48px;
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #777;
+}
+
+.tour-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+
+.tour-info>div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+.tour-info i {
+    font-size: 18px;
+
+    color: #b28a2e;
+}
+
+
+.tour-price {
+    margin-top: 25px;
+}
+
+
+.tour-price small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    color: #999;
+}
+
+
+.tour-price strong {
+    font-size: 29px;
+
+    font-weight: 800;
+
+    color: #171717;
+}
+
+
+.tour-price span {
+    margin-left: 3px;
+
+    font-size: 12px;
+
+    color: #888;
+}
+
+
+.tour-divider {
+    height: 1px;
+
+    margin: 25px 0 15px;
+
+    background: #eeeeee;
+}
+
+
+.tour-features {
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.tour-features li {
+    display: flex;
+
+    align-items: center;
+
+    min-height: 35px;
+
+    font-size: 13px;
+
+    color: #555;
+}
+
+
+.tour-features li i {
+    margin-right: 9px;
+
+    font-size: 17px;
+
+    color: #b28a2e;
+}
+
+
+.tour-buttons {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: auto;
+
+    padding-top: 25px;
+}
+
+
+.tour-buttons .tour-btn {
+    width: 100%;
+
+    height: 50px;
+
+    line-height: 50px;
+
+    margin: 0;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 8px;
+
+    box-shadow: none !important;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: .3px;
+
+    transition: all .3s ease;
+}
+
+/* ICON BUTTON TOUR */
+.tour-buttons .tour-btn .material-icons {
+    margin-right: 5px !important;
+    margin-left: 0 !important;
+}
+
+.tour-btn-outline {
+    background: #ffffff !important;
+
+    color: #171717 !important;
+
+    border: 1px solid #d5d5d5;
+}
+
+
+.tour-btn-outline:hover {
+    background: #171717 !important;
+
+    color: #ffffff !important;
+
+    border-color: #171717;
+}
+
+.tour-btn-gold {
+    background: #b28a2e !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #b28a2e;
+}
+
+
+.tour-btn-gold:hover {
+    background: #171717 !important;
+
+    border-color: #171717;
+}
+
+
+@media only screen and (min-width: 993px) {
+
+    .tour-pricing-section .container {
+        width: 94%;
+        max-width: 1450px;
+    }
+
+    .tour-card-content {
+        padding: 32px 35px 35px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .tour-pricing-section {
+        padding: 70px 0;
+    }
+
+    .tour-pricing-title {
+        font-size: 34px;
+    }
+
+    .tour-card-featured {
+        transform: none;
+    }
+
+    .tour-card-featured:hover {
+        transform: translateY(-8px);
+    }
+
+    .tour-card-content {
+        padding: 28px 25px 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .tour-pricing-section {
+        padding: 55px 0;
+    }
+
+    .tour-pricing-section .container {
+        width: 92%;
+    }
+
+    .tour-pricing-title {
+        font-size: 29px;
+    }
+
+    .tour-pricing-description {
+        font-size: 14px;
+
+        margin-bottom: 40px;
+    }
+
+    /* CARD */
+
+    .tour-pricing-row>.col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tour-card {
+        height: auto;
+
+        transform: none !important;
+    }
+
+    .tour-card:hover {
+        transform: translateY(-5px) !important;
+    }
+
+    /* IMAGE */
+
+    .tour-card-image {
+        width: 100%;
+    }
+
+    .tour-card-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* CONTENT */
+
+    .tour-card-content {
+        padding: 25px 20px 25px;
+    }
+
+    .tour-card-content h3 {
+        font-size: 22px;
+    }
+
+    /* INFO */
+
+    .tour-info {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    /* PRICE */
+
+    .tour-price strong {
+        font-size: 26px;
+    }
+
+    /* BUTTON */
+
+    .tour-buttons {
+        padding-top: 20px;
+    }
+
+    .tour-buttons .tour-btn {
+        height: 48px;
+
+        line-height: 48px;
+    }
+
+}
+
+
+.tour-booking-modal {
+    width: 70%;
+    max-width: 850px;
+
+    max-height: 90%;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.20);
+}
+
+
+.tour-booking-modal .modal-header {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 30px 38px 25px;
+
+    background: #171717;
+
+    color: #ffffff;
+}
+
+
+/* SUBTITLE */
+
+.tour-booking-modal .modal-subtitle {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #b28a2e;
+}
+
+
+/* TITLE */
+
+.tour-booking-modal .modal-header h3 {
+    margin: 0 0 7px;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #ffffff;
+}
+
+
+/* DESCRIPTION */
+
+.tour-booking-modal .modal-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #bdbdbd;
+}
+
+
+/* CLOSE */
+
+.tour-booking-modal .modal-close-custom {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 20px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    transition: all .3s ease;
+}
+
+
+.tour-booking-modal .modal-close-custom:hover {
+    background: #b28a2e;
+
+    color: #ffffff;
+}
+
+
+.tour-booking-modal .modal-close-custom i {
+    font-size: 21px;
+}
+
+
+.tour-booking-modal .modal-content {
+    padding: 35px 38px 30px;
+
+    background: #ffffff;
+}
+
+
+.booking-row {
+    margin-bottom: 0;
+}
+
+
+.booking-row .input-field {
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+/* Fix Jarak Select */
+.booking-row .select-wrapper {
+    margin-top: 0 !important;
+}
+
+.booking-row .select-wrapper input.select-dropdown {
+    height: 42px !important;
+    line-height: 42px !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 30px !important;
+}
+
+/* Label select */
+.booking-row .input-field>label {
+    top: 0 !important;
+}
+
+/* Saat select aktif */
+.booking-row .input-field>label.active {
+    transform: translateY(-14px) scale(0.8) !important;
+    transform-origin: 0 0;
+}
+
+/* INPUT */
+
+.booking-row input[type="text"],
+.booking-row input[type="tel"],
+.booking-row textarea,
+.booking-row .select-wrapper input.select-dropdown {
+    box-sizing: border-box;
+
+    color: #333333;
+
+    border-bottom: 1px solid #d6d6d6;
+
+    font-size: 14px;
+}
+
+
+/* FOCUS */
+
+.booking-row input[type="text"]:focus,
+.booking-row input[type="tel"]:focus,
+.booking-row textarea:focus,
+.booking-row .select-wrapper input.select-dropdown:focus {
+    border-bottom: 2px solid #b28a2e !important;
+
+    box-shadow: none !important;
+}
+
+
+/* LABEL */
+
+.booking-row .input-field>label {
+    color: #999999;
+
+    font-size: 13px;
+}
+
+
+/* ACTIVE LABEL */
+
+.booking-row .input-field>label.active {
+    color: #b28a2e !important;
+}
+
+
+/* PREFIX ICON */
+
+.booking-row .input-field .prefix {
+    color: #999999;
+    font-size: 21px;
+    top: 5px;
+}
+
+.booking-row .input-field .prefix.active {
+    color: #b28a2e;
+}
+
+/* Select dengan icon */
+.booking-row .input-field .prefix~.select-wrapper {
+    margin-left: 3rem;
+    width: calc(100% - 3rem);
+}
+
+.booking-row .input-field .prefix~label {
+    margin-left: 3rem;
+}
+
+
+.booking-row .select-wrapper {
+    width: 100%;
+}
+
+
+.booking-row .select-wrapper input.select-dropdown {
+    width: 100%;
+
+    margin: 0;
+
+    padding-right: 30px;
+}
+
+
+.booking-row textarea.materialize-textarea {
+    min-height: 70px !important;
+    height: 70px !important;
+
+    margin: 0 0 0 40px !important;
+    padding: 8px 0 !important;
+
+    box-sizing: border-box !important;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.booking-row .input-field .prefix {
+    color: #999;
+    font-size: 21px;
+    top: 5px;
+}
+
+.booking-row .input-field .prefix.active {
+    color: #b28a2e !important;
+}
+
+.booking-row textarea.materialize-textarea+label {
+    color: #999;
+}
+
+.booking-row textarea.materialize-textarea:focus+label,
+.booking-row textarea.materialize-textarea+label.active {
+    color: #b28a2e !important;
+}
+
+
+.booking-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    margin-top: 5px;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    background: #faf7ef;
+
+    border-left: 3px solid #b28a2e;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.booking-note i {
+    flex-shrink: 0;
+
+    margin-top: 1px;
+
+    font-size: 18px;
+
+    color: #b28a2e;
+}
+
+
+.booking-submit {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 25px;
+}
+
+
+.booking-btn {
+    min-width: 190px;
+
+    height: 48px;
+
+    line-height: 48px;
+
+    padding: 0 20px;
+
+    border-radius: 8px;
+
+    background: #b28a2e !important;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: .3px;
+
+    box-shadow: none !important;
+
+    transition: all .3s ease;
+}
+
+
+.booking-btn:hover {
+    background: #171717 !important;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .15) !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .tour-booking-modal {
+        width: 80%;
+    }
+
+    .tour-booking-modal .modal-header {
+        padding: 28px 30px 23px;
+    }
+
+    .tour-booking-modal .modal-content {
+        padding: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .tour-booking-modal {
+        width: 94%;
+
+        max-height: 92%;
+
+        border-radius: 14px;
+    }
+
+
+    /* HEADER */
+
+    .tour-booking-modal .modal-header {
+        padding: 23px 20px 20px;
+    }
+
+
+    .tour-booking-modal .modal-header h3 {
+        font-size: 21px;
+
+        padding-right: 10px;
+    }
+
+
+    .tour-booking-modal .modal-header p {
+        font-size: 12px;
+
+        padding-right: 25px;
+    }
+
+
+    .tour-booking-modal .modal-close-custom {
+        width: 34px;
+        height: 34px;
+
+        margin-left: 8px;
+    }
+
+
+    /* CONTENT */
+
+    .tour-booking-modal .modal-content {
+        padding: 25px 20px 25px;
+    }
+
+
+    /* INPUT */
+
+    .booking-row .input-field {
+        margin-top: 8px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .booking-row .input-field .prefix {
+        font-size: 20px;
+    }
+
+
+    /* NOTE */
+
+    .booking-note {
+        font-size: 11px;
+
+        padding: 11px 12px;
+    }
+
+
+    /* BUTTON */
+
+    .booking-submit {
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+
+    .booking-btn {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+}
+
+
+.tour-detail-modal {
+    width: 100%;
+    max-width: 500px;
+
+    max-height: 90%;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.20);
+}
+
+
+.tour-detail-header {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 30px 38px 25px;
+
+    background: #171717;
+    color: #ffffff;
+}
+
+
+.tour-detail-header>div {
+    min-width: 0;
+}
+
+
+.tour-detail-subtitle {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #b28a2e;
+}
+
+
+.tour-detail-header h3 {
+    margin: 0 0 8px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #ffffff;
+}
+
+
+.tour-detail-header p {
+    margin: 0;
+
+    max-width: 650px;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #bdbdbd;
+}
+
+
+.tour-detail-close {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 20px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    transition: all 0.3s ease;
+}
+
+
+.tour-detail-close:hover {
+    background: #b28a2e;
+
+    color: #ffffff;
+}
+
+
+.tour-detail-close i {
+    font-size: 21px;
+}
+
+
+.tour-detail-modal .modal-content {
+    padding: 30px 38px 35px;
+
+    background: #ffffff;
+}
+
+
+.tour-detail-image {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto 25px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f5f5f5;
+    line-height: 0;
+    text-align: center;
+}
+
+.tour-detail-image img {
+    display: block;
+    width: 100%;
+    max-width: 820px;
+    height: 330px;
+    margin: 0 auto;
+    object-fit: contain;
+    cursor: zoom-in;
+}
+
+.tour-detail-image img:hover {
+    opacity: 0.95;
+}
+
+
+.tour-detail-category {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #b28a2e;
+}
+
+
+.tour-detail-info h4,
+.tour-detail-modal .modal-content>h4 {
+    margin: 0 0 10px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #171717;
+}
+
+
+.tour-detail-info p,
+.tour-detail-modal .modal-content>p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #777777;
+}
+
+
+.tour-detail-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: #faf7ef;
+
+    border: 1px solid #eee7d8;
+}
+
+
+.tour-detail-list div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-height: 28px;
+
+    font-size: 13px;
+
+    color: #555555;
+}
+
+
+.tour-detail-list i {
+    flex-shrink: 0;
+
+    font-size: 19px;
+
+    color: #b28a2e;
+}
+
+
+.tour-itinerary {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.tour-itinerary h5 {
+    margin: 0 0 15px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #171717;
+}
+
+
+.tour-itinerary ul {
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.tour-itinerary li {
+    position: relative;
+
+    margin-bottom: 9px;
+
+    padding-left: 20px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #666666;
+}
+
+
+.tour-itinerary li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 2px;
+    top: 9px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #b28a2e;
+}
+
+
+.tour-detail-action {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.tour-detail-action .tour-btn-gold {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+
+    line-height: normal;
+
+    padding: 0 22px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.tour-detail-action .tour-btn-gold i {
+    font-size: 19px;
+
+    margin-right: 7px;
+}
+
+
+.materialbox {
+    cursor: zoom-in;
+}
+
+
+.materialbox-caption {
+    background-color: rgba(23, 23, 23, 0.90) !important;
+
+    padding: 12px 15px !important;
+
+    font-size: 13px !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .tour-detail-modal {
+        width: 82%;
+
+        max-height: 90%;
+    }
+
+    .tour-detail-header {
+        padding: 28px 30px 23px;
+    }
+
+    .tour-detail-modal .modal-content {
+        padding: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .tour-detail-modal {
+        width: 94%;
+
+        max-height: 92%;
+
+        border-radius: 14px;
+    }
+
+
+    /* HEADER */
+
+    .tour-detail-header {
+        padding: 22px 20px 20px;
+    }
+
+
+    .tour-detail-header h3 {
+        font-size: 21px;
+    }
+
+
+    .tour-detail-header p {
+        font-size: 12px;
+
+        padding-right: 5px;
+    }
+
+
+    .tour-detail-close {
+        width: 34px;
+        height: 34px;
+
+        margin-left: 8px;
+    }
+
+
+    /* CONTENT */
+
+    .tour-detail-modal .modal-content {
+        padding: 22px 20px 25px;
+    }
+
+
+    /* IMAGE */
+
+    .tour-detail-image {
+        margin-bottom: 22px;
+
+        border-radius: 10px;
+    }
+
+
+    .tour-detail-image img {
+        max-height: 300px;
+    }
+
+
+    /* TITLE */
+
+    .tour-detail-modal .modal-content>h4 {
+        font-size: 22px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .tour-detail-modal .modal-content>p {
+        font-size: 13px;
+    }
+
+
+    /* INFO */
+
+    .tour-detail-list {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+
+    /* ITINERARY */
+
+    .tour-itinerary {
+        margin-top: 25px;
+
+        padding-top: 22px;
+    }
+
+
+    /* BUTTON */
+
+    .tour-detail-action {
+        margin-top: 25px;
+
+        padding-top: 20px;
+    }
+
+
+    .tour-detail-action .tour-btn-gold {
+        width: 100%;
+    }
+
+}
+
+.car-filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 16px 0;
+
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+
+    background: #ffffff;
+}
+
+
+.car-filter-title {
+    position: relative;
+
+    margin: 0;
+    padding-left: 15px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #171717;
+}
+
+.car-filter-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 3px;
+    height: 21px;
+
+    transform: translateY(-50%);
+
+    border-radius: 3px;
+
+    background: #292929;
+}
+
+
+.car-filter {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 6px;
+
+    margin: 0;
+    padding: 4px;
+
+    border-radius: 9px;
+
+    background: #f3f3f3;
+}
+
+
+.car-filter a {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 37px;
+
+    padding: 0 16px;
+
+    border: 1px solid transparent;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #666666;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.car-filter a:hover {
+    color: #222222;
+
+    background: #e8e8e8;
+}
+
+
+.car-filter a.active {
+    color: #ffffff;
+
+    background: #1d1d1d;
+
+    border-color: #1d1d1d;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, .18);
+}
+
+
+.car-filter a.active::before {
+    content: "";
+
+    width: 4px;
+    height: 4px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #c3a66b;
+}
+
+
+.car-filter a.active:hover {
+    background: #111111;
+
+    border-color: #111111;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, .22);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .car-filter-wrapper {
+        display: block;
+
+        padding: 15px 0;
+    }
+
+    .car-filter-title {
+        margin-bottom: 13px;
+
+        font-size: 16px;
+    }
+
+    .car-filter {
+        justify-content: flex-start;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        gap: 5px;
+
+        padding: 4px;
+
+        scrollbar-width: none;
+    }
+
+    .car-filter::-webkit-scrollbar {
+        display: none;
+    }
+
+    .car-filter a {
+        flex-shrink: 0;
+
+        height: 36px;
+
+        padding: 0 14px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+.car-card {
+    border-radius: 12px !important;
+
+    overflow: hidden;
+
+    border: 1px solid #d4af5a;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .12);
+
+    transition: all .3s ease;
+}
+
+
+/* HOVER */
+
+.car-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .18);
+}
+
+
+.car-card .card-image {
+    background: #f5f5f5;
+
+    overflow: hidden;
+}
+
+
+.car-card .card-image .img-cars {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .4s ease;
+}
+
+
+.car-card:hover .card-image .img-cars {
+    transform: scale(1.03);
+}
+
+
+/* TITLE MATERIALIZE */
+
+.car-card .card-image .card-title {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    padding: 18px;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, .7);
+}
+
+
+.car-card .card-content {
+    padding: 20px !important;
+}
+
+
+/* CATEGORY */
+
+.car-card .car-category {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b28a2e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* TRANSMISSION */
+
+.car-card .car-transmission {
+    margin: 0 0 18px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+.car-card .car-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+
+.car-card .car-info span {
+    display: flex;
+
+    align-items: center;
+
+    font-size: 12px;
+
+    color: #666;
+}
+
+
+.car-card .car-info i {
+    margin-right: 7px;
+
+    color: #b28a2e;
+}
+
+
+.car-card .card-action {
+    padding: 15px 20px !important;
+
+    border-top: 1px solid #eee;
+
+    background: #fafafa;
+}
+
+
+/* BUTTON */
+
+.car-card .btn-cars {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 40px;
+
+    line-height: normal !important;
+
+    margin: 0;
+
+    border-radius: 6px;
+
+    background: #212121 !important;
+
+    color: #fff;
+
+    box-shadow: none !important;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: all .3s ease;
+}
+
+
+.car-card .btn-cars:hover {
+    background: #b28a2e !important;
+}
+
+
+.car-card .btn-cars i {
+    margin-right: 7px;
+
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .car-card .card-image .img-cars {
+        height: auto;
+    }
+
+    .car-card .card-content {
+        padding: 18px !important;
+    }
+
+    .car-card .card-action {
+        padding: 12px 18px !important;
+    }
+
+}
+
+/* Header Layanan Kami */
+.titles {
+    color: #202020;
+}
+
+.row>.col>h5.titles {
+    color: #9b7a43;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.row>.col>h3.titles {
+    color: #1d1d1d;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.row>.col>p.center {
+    color: #6b6b6b;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+
+.responsive-section {
+    display: flex !important;
+    align-items: stretch !important;
+
+    width: 100% !important;
+
+    /* Menghilangkan margin negatif bawaan Materialize */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 40px !important;
+
+    padding: 0 !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #e5e1da !important;
+    border-radius: 12px !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+
+/* Efek hover desktop */
+
+.responsive-section:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.11) !important;
+}
+
+.responsive-section>.gambar,
+.responsive-section>.paragraf {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.responsive-section>.gambar {
+    width: 50%;
+}
+
+.responsive-section .gambar .card {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+}
+
+.responsive-section .gambar .card-image {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.responsive-section .gambar img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 320px;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Zoom gambar saat hover */
+
+.responsive-section:hover .gambar img {
+    transform: scale(1.03);
+}
+
+
+.responsive-section>.paragraf {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 25px !important;
+
+    background: #ffffff;
+}
+
+
+/* Judul */
+
+.responsive-section .paragraf h4 {
+    position: relative;
+
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: #222222;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+
+/* Garis kecil premium */
+
+.responsive-section .paragraf h4::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin-top: 15px;
+
+    background: #9b7a43;
+
+    border-radius: 3px;
+}
+
+
+/* Paragraf */
+.responsive-section .paragraf p {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Pembatas */
+/* gambar kiri - teks kanan */
+.responsive-section .gambar+.paragraf {
+    border-left: 1px solid #eee9e1 !important;
+}
+
+/* teks kiri - gambar kanan */
+.responsive-section .paragraf+.gambar {
+    border-left: 1px solid #eee9e1 !important;
+}
+
+
+@media (max-width: 992px) {
+
+    .responsive-section>.paragraf {
+        padding: 35px 35px !important;
+    }
+
+    .responsive-section .paragraf h4 {
+        font-size: 23px;
+    }
+
+    .responsive-section .paragraf p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .responsive-section .gambar img {
+        min-height: 300px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /* Satu card tetap utuh */
+    .responsive-section {
+        display: flex !important;
+        flex-direction: column !important;
+
+        margin-bottom: 30px !important;
+
+        border-radius: 15px !important;
+
+        overflow: hidden !important;
+    }
+
+    .responsive-section>.gambar {
+        order: 1 !important;
+
+        width: 100% !important;
+    }
+
+    .responsive-section>.paragraf {
+        order: 2 !important;
+
+        width: 100% !important;
+
+        padding: 28px 25px 30px !important;
+
+        border-left: none !important;
+        border-top: 1px solid #eee9e1 !important;
+    }
+
+
+    /* Card gambar */
+
+    .responsive-section .gambar .card {
+        height: auto !important;
+
+        margin: 0 !important;
+
+        border-radius: 0 !important;
+    }
+
+
+    .responsive-section .gambar .card-image {
+        height: auto !important;
+    }
+
+
+    /* Gambar tidak dipaksa tinggi di HP */
+
+    .responsive-section .gambar img {
+        width: 100% !important;
+        height: auto !important;
+
+        min-height: 0 !important;
+
+        object-fit: contain !important;
+
+        transform: none !important;
+    }
+
+
+    /* Judul */
+
+    .responsive-section .paragraf h4 {
+        font-size: 22px;
+
+        line-height: 1.4;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* Paragraph */
+
+    .responsive-section .paragraf p {
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        text-align: justify;
+    }
+
+
+    /* Header */
+
+    .row>.col>h3.titles {
+        font-size: 26px;
+    }
+
+    .row>.col>p.center {
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .responsive-section>.paragraf {
+        padding: 25px 20px 28px !important;
+    }
+
+    .responsive-section .paragraf h4 {
+        font-size: 20px;
+    }
+
+    .responsive-section .paragraf p {
+        font-size: 13.5px;
+    }
+
+}
+
+
+.responsive-section .paragraf {
+    background: #ffffff !important;
+}
+
+
+/* Judul layanan */
+
+.responsive-section .paragraf h4 {
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+
+/* Garis aksen */
+
+.responsive-section .paragraf h4::after {
+    background: #b08a3c !important;
+}
+
+
+/* Isi paragraph */
+
+.responsive-section .paragraf p {
+    color: #333333 !important;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.row>.col>h5.titles {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.row>.col>h3.titles {
+    color: #111111 !important;
+    font-weight: 700;
+}
+
+.row>.col>p.center {
+    color: #222222 !important;
+    font-weight: 500;
+}
+
+
+.kebutuhan-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #b28a2e;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b28a2e;
+    color: #fff;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+
+    transition: all 0.3s ease;
+
+    z-index: 9999;
+}
+
+.back-to-top i {
+    font-size: 24px;
+}
+
+.back-to-top:hover {
+    background: #171717;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Muncul setelah scroll */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .back-to-top {
+        right: 18px;
+        bottom: 18px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .back-to-top i {
+        font-size: 22px;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+/* Footer */
+.footer-premium {
+    background: #111 !important;
+    padding-top: 70px;
+    color: #bdbdbd;
+}
+
+/* BRAND */
+.footer-brand h4 {
+    margin: 0 0 18px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: .5px;
+}
+
+.footer-brand h4 span {
+    color: #b28a2e;
+}
+
+.footer-tagline {
+    color: #b28a2e !important;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.footer-description {
+    max-width: 500px;
+    color: #aaa !important;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 14px;
+    border: 1px solid rgba(178, 138, 46, .45);
+    border-radius: 30px;
+    color: #c5c5c5;
+    font-size: 12px;
+}
+
+.footer-badge i {
+    color: #b28a2e;
+    font-size: 17px;
+}
+
+/* TITLE */
+.footer-premium h5 {
+    position: relative;
+    margin: 0 0 25px;
+    padding-bottom: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-premium h5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    height: 2px;
+    background: #b28a2e;
+}
+
+/* MENU */
+.footer-menu ul {
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 13px;
+}
+
+.footer-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaa !important;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.footer-menu a:hover {
+    color: #b28a2e !important;
+    padding-left: 5px;
+}
+
+.footer-menu a i {
+    color: #b28a2e;
+    font-size: 18px;
+}
+
+/* CONTACT */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 17px;
+}
+
+.contact-item>i {
+    color: #b28a2e;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.contact-item span {
+    display: block;
+    color: #888;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #bbb;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* SOCIAL */
+.footer-social {
+    display: flex;
+    gap: 9px;
+    margin-top: 22px;
+}
+
+.footer-social a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #444;
+    border-radius: 50%;
+    color: #aaa !important;
+    transition: .3s;
+}
+
+.footer-social a:hover {
+    color: #111 !important;
+    background: #b28a2e;
+    border-color: #b28a2e;
+    transform: translateY(-3px);
+}
+
+.footer-social i {
+    font-size: 16px;
+}
+
+.footer-social .material-icons {
+    font-size: 18px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    margin-top: 55px;
+    padding: 18px 0;
+    border-top: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.footer-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom-left {
+    color: #777;
+    font-size: 12px;
+}
+
+.footer-bottom-left strong {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.footer-bottom-right {
+    color: #666;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-premium {
+        padding-top: 50px;
+    }
+
+    .footer-brand,
+    .footer-menu,
+    .footer-contact {
+        margin-bottom: 38px;
+    }
+
+    .footer-brand h4 {
+        font-size: 26px;
+    }
+
+    .footer-tagline {
+        font-size: 15px;
+    }
+
+    .footer-description {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        margin-top: 15px;
+    }
+
+    .footer-bottom .container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-bottom-right {
+        margin-top: 7px;
+    }
+}
+
+
+
+/* Faq */
+.faq-section {
+    padding: 20px 0 80px;
+}
+
+.faq-section .faq-title {
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.faq-section .faq-subtitle {
+    color: #000;
+    margin-bottom: 35px;
+}
+
+
+/* Container FAQ */
+.faq-section .faq-list {
+    border: none;
+    margin: 0;
+    box-shadow: none;
+}
+
+
+/* Item FAQ */
+.faq-section .faq-list li {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.faq-section .faq-list li:hover {
+    border-color: #b28a2e;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Header */
+.faq-section .faq-list .collapsible-header {
+    min-height: 60px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+
+    background: #fff;
+    border: none;
+
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Icon */
+.faq-section .faq-list .collapsible-header i {
+    color: #b28a2e;
+    font-size: 22px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Arrow Materialize */
+.faq-section .faq-list .collapsible-header::after {
+    margin-left: auto;
+    color: #b28a2e;
+}
+
+
+/* Header ketika aktif */
+.faq-section .faq-list li.active .collapsible-header {
+    color: #b28a2e;
+    background: #fffdf8;
+}
+
+
+/* Icon ketika aktif */
+.faq-section .faq-list li.active .collapsible-header i {
+    transform: rotate(10deg);
+}
+
+
+/* Body */
+.faq-section .faq-list .collapsible-body {
+    padding: 0 22px 22px 59px;
+    border: none;
+    background: #fffdf8;
+}
+
+
+/* Text jawaban */
+.faq-section .faq-list .collapsible-body span,
+.faq-section .faq-list .collapsible-body p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .faq-section {
+        padding: 45px 0 60px;
+    }
+
+    .faq-section .faq-list li {
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    .faq-section .faq-list .collapsible-header {
+        min-height: 58px;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .faq-section .faq-list .collapsible-header i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .faq-section .faq-list .collapsible-body {
+        padding: 0 16px 18px 46px;
+    }
+
+    .faq-section .faq-list .collapsible-body span,
+    .faq-section .faq-list .collapsible-body p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    /* .title-header {
+    margin-top: 100px;
+    text-align: center;
+} */
+}
+
+.title-header {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+    .title-header {
+        /* padding-top: 250px; */
+        padding-bottom: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .title-header {
+        /* padding-top: 30px; */
+        padding-bottom: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .title-header h3 {
+        font-size: 26px;
+        line-height: 1.3;
+        margin: 0 0 10px;
+    }
+
+    .title-header p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .title-header {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+
+    .title-header h3 {
+        font-size: 23px;
+        line-height: 1.3;
+    }
+
+    .title-header p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* HP - 375px */
+@media (min-width: 321px) and (max-width: 375px) {
+    .title-header {
+        margin-top: 90px;
+        margin-bottom: 35px;
+        padding: 0 15px;
+    }
+
+    .title-header h3 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .title-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* HP - 425px */
+@media (min-width: 376px) and (max-width: 425px) {
+    .title-header {
+        margin-top: 150px;
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+
+    .title-header h3 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .title-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
